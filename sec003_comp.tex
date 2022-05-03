@@ -1,0 +1,72 @@
+\section{Vergleich von Brüchen; Brüche auf der Zahlengeraden}\vspace{-1em}
+Mithilfe von Kürzen und Erweitern lassen sich Bruchteile miteinander vergleichen, sodass man sagen kann, ob $\frac{11}{26}$ oder $\frac{22}{39}$ größer sind. Hierbei gibt es mehrere Methoden. zum einen den Vergleich bei gleichem Nenner und zum anderen den Vergleich bei gleichem Zähler. Bei beiden Methoden müssen die beiden Brüche zunächst gekürzt oder erweitert werden.
+
+\subsection{Vergleich bei gleichem Nenner}\vspace{-1em}
+
+Für unsere beiden Beispielzahlen ist beim Vergleich bei gleichem Nenner der Nenner $78$ ein gutes Ziel, weil $78$ ein gemeinsames Vielfaches von $26$ ($3\cdot 26=78$) und $39$ ($2\cdot39=78$) ist.
+
+Es ist dann $\frac{11}{26}\overset{3}{=}\frac{33}{78}$ und $\frac{22}{39}\overset{2}{=}\frac{44}{78}$. 
+
+Weil $33<44$ (Vergleich der Zähler), kann man nun sagen, dass $\frac{33}{78}<\frac{44}{78}$ ist. Somit stehen auch die Ausgangsbrüche im gleichen Verhältnis: 
+\begin{equation*}
+	\left(\frac{33}{78}= \right) \frac{11}{26}<\frac{22}{39} \left( =\frac{44}{78}\right)
+\end{equation*}
+\COLBOX{
+	Merke: Gleicher Nenner, dann gibt der größere Zähler den größeren Bruch an.
+}
+
+\subsection{Vergleich bei gleichen Zähler}\vspace{-1em}
+Der Vergleich bei gleichem Zähler läuft ähnlich ab. zunächst werden beide Brüche durch kürzen und/oder erweitern auf den gleichen Zähler gebracht und dann anhand des Nenners entschieden, welcher Bruch größer ist.
+
+Für die Zähler $11$ und $22$ bietet es sich an, auf $22$ zu erweitern, weil es das kleinste gemeinsame Vielfache dieser Zahlen ist. Wir sparen uns so sogar eine Erweiterung.
+
+Wir erweitern $\frac{11}{26}\overset{2}{=}\frac{22}{52}$.
+
+Die Nenner stehen nun im Verhältnis $52>39$. Das bedeutet, das wir einmal $22$ von $52$ Teilen haben und das andere Mal $22$ von $39$ Teilen. Diese $39$stel Teile sind aber Größer als die $52$stel Teile - genauso wie ein viertel größer ist als ein achtel. Die Ausgangsbrüche stehen daher im umgekehrten Verhältnis.
+
+Also ist $\frac{22}{52}<\frac{22}{39}$ und auch 
+\begin{equation*}
+	\left(\frac{22}{52}= \right) \frac{11}{26}<\frac{22}{39}
+\end{equation*}
+
+\COLBOX{
+	Merke: Gleicher Zähler, dann gibt der kleinere Nenner den größeren Bruch an.
+}
+
+\subsection{Brüche auf der Zahlengeraden}\vspace{-1em}
+So wie auch schon natürliche und ganze Zahlen\footnote{Die Zahlen $\{1;\,2;\,3;...\}$ heißen natürliche Zahlen ($\mathbb{N}$). Die Zahlen $\{...;\,-2;\,-1;\,0;\,1;\,2;\,...\}$ heißen ganze Zahlen ($\mathbb{Z}$). Jede natürliche Zahl ist auch eine ganze Zahl.}  lassen sich auch Brüche anhand ihrer Größe sortiert auf der Zahlengeraden eintragen. Wir füllen mit den Brüchen Lücken zwischen den bisher bekannten Zahlen. Der Bruch $\frac{1}{2}$ liegt bspw. genau in der Mitte zwischen $0$ und $1$ der Bruch $\frac{1}{4}$ wiederum genau zwischen $0$ und $\frac{1}{2}$. Der Bruch $\frac{3}{4}$ hingegen liegt in der Mitten zwischen $\frac{1}{2}$ und $1$.
+%
+\begin{center}
+	\begin{tikzpicture}[x=7.5cm,shift={(0.5,0.4)}]
+		\draw[->] (-0.1,0)--(1.1,0);
+		\draw[shift={(0,0)},color=black] (0pt,2pt) -- (0pt,-2pt) node[below] {$0$};
+		\draw[shift={(0.25,0)},color=black] (0pt,2pt) -- (0pt,-2pt) node[below] {$\frac{1}{4}$};
+		\draw[shift={(0.5,0)},color=black] (0pt,2pt) -- (0pt,-2pt) node[below] {$\frac{1}{2}$};
+		\draw[shift={(0.75,0)},color=black] (0pt,2pt) -- (0pt,-2pt) node[below] {$\frac{3}{4}$};
+		\draw[shift={(1,0)},color=black] (0pt,2pt) -- (0pt,-2pt) node[below] {$1$};
+	\end{tikzpicture}
+\end{center}
+%
+Sollen mehrere Brüche mit verschiedenen Nennern auf eine Zahlengerade eingetragen werden, ist es sinnvoll zunächst alle Brüche auf einen gemeinsamen Nenner zu bringen. Dann Teilt man den Abstand zwischen benachbarten ganzen Zahlen in ebenso viele gleichgroße Abstände ein, wie der gemeinsame Nenner groß ist. Zum Beispiel lassen sich $\frac{1}{2}$, $\frac{1}{4}$ und $\frac{7}{8}$ gut eintragen, wenn alle erst auf den Nenner $8$ erweitert werden: $\frac{4}{8}$, $\frac{2}{8}$ und $\frac{7}{8}$. Anschließend wird der Bereich zwischen $0$ und $1$ in acht gleiche Abschnitt unterteilt und die Brüche an diese eingetragen. 
+
+\begin{center}
+	\begin{tikzpicture}[x=7.5cm,>=stealth]
+		\draw[->] (-0.1,0)--(1.1,0);
+		\draw[shift={(0,0)},color=black] (0pt,2pt) -- (0pt,-2pt);
+		\node[shift={(0,0.4)}] {$0$};
+		\draw[shift={(0.125,0)},color=black] (0pt,2pt) -- (0pt,-2pt);
+		\draw[shift={(0.25,0)},color=black] (0pt,2pt) -- (0pt,-2pt) node[below] {$\frac{2}{8}$}; \node[shift={(0.25,0.4)}]{$\frac{1}{4}$};
+		\draw[shift={(0.375,0)},color=black] (0pt,2pt) -- (0pt,-2pt);
+		\draw[shift={(0.5,0)},color=black] (0pt,2pt) -- (0pt,-2pt) node[below] {$\frac{4}{8}$} ; \node[shift={(0.5,0.4)}]{$\frac{1}{2}$};
+		\draw[shift={(0.625,0)},color=black] (0pt,2pt) -- (0pt,-2pt);
+		\draw[shift={(0.75,0)},color=black] (0pt,2pt) -- (0pt,-2pt);
+		\draw[shift={(0.875,0)},color=black] (0pt,2pt) -- (0pt,-2pt)  node[below] {$\frac{7}{8}$};
+		\draw[shift={(1,0)},color=black] (0pt,2pt) -- (0pt,-2pt); \node[shift={(1,0.4)}]{$1$};
+	\end{tikzpicture}
+\end{center}
+
+\subsubsection*{Übungen:}\vspace{-1em}
+\begin{enumerate}[label=\alph*)]
+	\item Vergleiche die Brüche $\frac{7}{8}$ und $\frac{5}{6}$ (Setze $<$, $>$ oder $=$).
+	\item Trage die folgenden Brüche auf einer Zahlengraden ein: $\frac{5}{6}$; $\frac{2}{3}$; $\frac{9}{12}$
+\end{enumerate}

@@ -1,0 +1,46 @@
+	\section{Multiplikation und Division von Dezimalzahlen}\vspace{-1em}
+Bei der Multiplikation udn Division von Dezimalzahlen können wir wieder auf unser Wissen von der Multiplikation udn Division ganzer Zahlen zurückgreifen. Einzige Besonderheit ist, dass irgendwann ein Komma dazukommt. Die Position des Kommas wird bestimmt durch die Summe der Nachkommastellen der beiden Faktoren oder durch die Differenz der Nachkommastellen von Dividend und Divisor.
+
+\subsection{Multiplikation von Dezimalzahlen}\vspace{-1em}
+Jede abbrechende Dezimalzahl lässt sich leicht als Bruch schreiben. Bei dieser Umwandlung entstehen zwei Produkte: Im Zähler werden die Zahlen ohne Komma multipliziert. Im Nenner werden nur Potenzen von $10$ multipliziert\footnote{Potenzen wie $10^1=10;\; 10^2=100;\; 10^3=1\,000$ usw.}.
+%
+Beispiel:
+\begin{equation*}
+	1{,}25\cdot 0{,}3 = \frac{125}{100}\cdot\frac{3}{10}= \frac{125\cdot3}{100\cdot10}= \frac{375}{1000}=0{,}375
+\end{equation*}
+Man kann sich das Vorgehen auch verkürzen, wenn man zunächst multipliziert, als ob zwei ganze Zahlen vorlägen und am Ende ein Komma so setzt, dass das Ergebnis genauso viele Nachkommastellen hat, wie die beiden Faktoren zusammen.
+\begin{equation*}
+	\underbrace{1{,}25}_{2 NKS}\cdot \underbrace{0{,}3}_{1 NKS} = \underbrace{0{,}375}_{3 NKS}
+\end{equation*}
+%
+Achtung: Es kann passieren, dass im Ergebnis der Multiplikation eine Null an der letzten Stelle stehen würde. In diesem Fall muss sie für die Nachkommastellen bedacht werden, kann aber im Endergebnis weggelassen werden.
+\begin{equation*}
+	\underbrace{1{,}5}_{1 NKS}\cdot \underbrace{0{,}04}_{2 NKS} = \underbrace{0{,}060}_{3NKS} = 0{,}06
+\end{equation*}
+\COLBOX{
+	Merke: Dezimalzahlen werden multipliziert, indem zunächst beide Zahlen ohne Komma multipliziert werden. Im Ergebnis muss dann ein Komma so eingesetzt werden, dass das Ergebnis genauso viele Nachkommastellen hat wie die beiden Faktoren zusammen.
+}
+
+Anmerkung: Bei periodischen Dezimalzahlen lohnt sich die Umwandlung in Brüche erst Recht. Dort stehen im Nenner statt 10er-Potenzen dann Zahlen wie $9$, $99$, $999$ usw.
+
+%Ein weiterer Weg sich die Anzahl der Nachkommastellen zu erschließen ist es, zunächst alle Dezimalzahlen durch \emph{1-Multiplikation} zu ganzen Zahlen umzuwandeln:
+%\begin{align*}
+%	1{,}25\cdot 0{,}3 &= 1{,}25 \cdot (100:100) \cdot 0{,}3\cdot (10:10) = 1{,}25\cdot 100 \cdot \frac{1}{100} \cdot 0{,}3 \cdot 10\cdot \frac{1}{10}\\& = 125 \cdot \frac{1}{100}\cdot 3 \cdot \frac{1}{10} = 125\cdot 3 \cdot \frac{1}{100}\cdot \frac{1}{10} = 375 \cdot \frac{1}{1000} = 0{,}375
+%\end{align*}
+
+
+\subsection{Division von Dezimalzahlen}\vspace{-1em}
+Auch die Division läuft grundsätzlich wie bei ganzen Zahlen. Beim Ergebnis muss wieder an der richtigen Stelle ein Komma eingefügt werden. Die Position des Kommas wird wieder in der Bruchschreibweise deutlich:
+\begin{equation*}
+	7{,}5:0{,}15 = \frac{75}{10}: \frac{15}{100} = \frac{75}{10}\cdot \frac{100}{15} = \frac{75\cdot 100}{10\cdot 15} =\frac{75\cdot 100}{15\cdot 10} = \frac{75}{15}\cdot \frac{100}{10}
+\end{equation*}
+Im letzten Ausdruck steht der Bruch $\frac{75}{15}$ für die Division der Zahlen ohne Komma $75:15$ und der zweite Ausdruck $\frac{100}{10}$ gibt an, wie das Komma verschoben werden muss. $75:15=5$ und $100:10=10$ daher ist das Ergebnis $50$ eine $5{,}0$ mit Kommaverschiebung um eins nach rechts.
+
+Die Kommaverschiebung ergibt sich auch aus der Differenz der Nachkommastellen von Dividend und Divisor. 
+\begin{enumerate}
+	\item Ist sie positiv muss das Komma im ganzzahligen Ergebnis nach links geschoben werden. Das Ergebnis wird kleiner. 
+	Beispiel: $0{,}24:0{,}2 =1{,}2$
+	
+	\item Ist das Ergebnis negativ, muss das Komma nach rechts geschoben werden udn das Ergebnis wird größer. 
+	Beispiel: $1{,}32:0{,}012=110$
+\end{enumerate}
