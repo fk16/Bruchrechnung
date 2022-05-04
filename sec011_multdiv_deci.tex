@@ -2,7 +2,7 @@
 Bei der Multiplikation udn Division von Dezimalzahlen können wir wieder auf unser Wissen von der Multiplikation udn Division ganzer Zahlen zurückgreifen. Einzige Besonderheit ist, dass irgendwann ein Komma dazukommt. Die Position des Kommas wird bestimmt durch die Summe der Nachkommastellen der beiden Faktoren oder durch die Differenz der Nachkommastellen von Dividend und Divisor.
 
 \subsection{Multiplikation von Dezimalzahlen}\vspace{-1em}
-Jede abbrechende Dezimalzahl lässt sich leicht als Bruch schreiben. Bei dieser Umwandlung entstehen zwei Produkte: Im Zähler werden die Zahlen ohne Komma multipliziert. Im Nenner werden nur Potenzen von $10$ multipliziert\footnote{Potenzen wie $10^1=10;\; 10^2=100;\; 10^3=1\,000$ usw.}.
+Jede abbrechende Dezimalzahl lässt sich leicht als Bruch schreiben. Bei dieser Umwandlung entstehen zwei Produkte: Im Zähler werden die Zahlen ohne Komma multipliziert. Im Nenner werden nur Potenzen von $10$ multipliziert\footnote{Potenzen wie $10^1=10;\; 10^2=100;\; 10^3=1\,000$ usw. heißen auch \emph{Zehnerpotenzen}.}.
 %
 Beispiel:
 \begin{equation*}
@@ -21,7 +21,7 @@ Achtung: Es kann passieren, dass im Ergebnis der Multiplikation eine Null an der
 	Merke: Dezimalzahlen werden multipliziert, indem zunächst beide Zahlen ohne Komma multipliziert werden. Im Ergebnis muss dann ein Komma so eingesetzt werden, dass das Ergebnis genauso viele Nachkommastellen hat wie die beiden Faktoren zusammen.
 }
 
-Anmerkung: Bei periodischen Dezimalzahlen lohnt sich die Umwandlung in Brüche erst Recht. Dort stehen im Nenner statt 10er-Potenzen dann Zahlen wie $9$, $99$, $999$ usw.
+Anmerkung: Bei periodischen Dezimalzahlen lohnt sich die Umwandlung in Brüche erst recht. Dort stehen im Nenner statt 10er-Potenzen dann Zahlen wie $9$, $99$, $999$ usw.
 
 %Ein weiterer Weg sich die Anzahl der Nachkommastellen zu erschließen ist es, zunächst alle Dezimalzahlen durch \emph{1-Multiplikation} zu ganzen Zahlen umzuwandeln:
 %\begin{align*}
@@ -30,17 +30,25 @@ Anmerkung: Bei periodischen Dezimalzahlen lohnt sich die Umwandlung in Brüche e
 
 
 \subsection{Division von Dezimalzahlen}\vspace{-1em}
-Auch die Division läuft grundsätzlich wie bei ganzen Zahlen. Beim Ergebnis muss wieder an der richtigen Stelle ein Komma eingefügt werden. Die Position des Kommas wird wieder in der Bruchschreibweise deutlich:
+Auch die Division läuft grundsätzlich wie bei ganzen Zahlen. Beim Ergebnis muss wieder an der richtigen Stelle ein Komma eingefügt werden. Die Position des Kommas wird durch die Bruchschreibweise vorgegeben:
 \begin{equation*}
 	7{,}5:0{,}15 = \frac{75}{10}: \frac{15}{100} = \frac{75}{10}\cdot \frac{100}{15} = \frac{75\cdot 100}{10\cdot 15} =\frac{75\cdot 100}{15\cdot 10} = \frac{75}{15}\cdot \frac{100}{10}
 \end{equation*}
 Im letzten Ausdruck steht der Bruch $\frac{75}{15}$ für die Division der Zahlen ohne Komma $75:15$ und der zweite Ausdruck $\frac{100}{10}$ gibt an, wie das Komma verschoben werden muss. $75:15=5$ und $100:10=10$ daher ist das Ergebnis $50$ eine $5{,}0$ mit Kommaverschiebung um eins nach rechts.
 
-Die Kommaverschiebung ergibt sich auch aus der Differenz der Nachkommastellen von Dividend und Divisor. 
-\begin{enumerate}
-	\item Ist sie positiv muss das Komma im ganzzahligen Ergebnis nach links geschoben werden. Das Ergebnis wird kleiner. 
-	Beispiel: $0{,}24:0{,}2 =1{,}2$
-	
-	\item Ist das Ergebnis negativ, muss das Komma nach rechts geschoben werden udn das Ergebnis wird größer. 
-	Beispiel: $1{,}32:0{,}012=110$
-\end{enumerate}
+%Die Kommaverschiebung ergibt sich auch aus der Differenz der Nachkommastellen von Dividend und Divisor. 
+%\begin{enumerate}
+%	\item Ist sie positiv muss das Komma im ganzzahligen Ergebnis nach links geschoben werden. Das Ergebnis wird kleiner. 
+%	Beispiel: $0{,}24:0{,}2 =1{,}2$
+%	
+%	\item Ist das Ergebnis negativ, muss das Komma nach rechts geschoben werden udn das Ergebnis wird größer. 
+%	Beispiel: $1{,}32:0{,}012=110$
+%\end{enumerate}
+
+Um das Verfahren abzukürzen, kann bei Dividend und Divisor solange das Komma nach rechts verschoben werden, \textbf{bis der Divisor keine Nachkommastellen mehr hat}. Dabei ist es wichtig, dass die \textbf{Kommaverschiebung in beiden Zahlen um gleich viele Stellen} geschieht. Es können im Zweifel wieder beliebig viele unsichtbare Nullen hinter dem Komma dazugenommen werden, damit weiter das Komma verschoben werden kann.
+
+Aus der Eingangsaufgabe wird dann:
+$$ 7{,}5:0{,}15=75{,}0:1{,}5=750:15=50$$
+
+Hinweis: Die gleichmäßige Kommaverschiebung entspricht dem Erweitern von Dividend und Divisor mit zehn, hundert oder tausend (je nachdem, wie viele Stellen). Der Bruchstrich wird dabei als Divisionszeichen umgeschrieben.
+$$ 7{,}5:0{,}15=\frac{7{,}5}{0{,}15}\overset{100}{=}\frac{750}{15}=750:15=50$$ 
